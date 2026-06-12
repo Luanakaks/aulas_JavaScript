@@ -24,6 +24,7 @@
 <body>
     <h1>OLÁ MUNDO EM JS: <mark>ALERT</mark></h1>
     <hr>
+    <p></p>
     <script>
         window.alert("Seja bem-vindo ao site ");
         let num1 = window.prompt("Solicite o primeiro número: ");
@@ -32,21 +33,23 @@
         let num2 = window.prompt("Solicite o segundo número: ");
         num2 = parseInt(num2);
 
-        let op = window.prompt("Qual tipo de operação? ")
+        let op = window.prompt("Qual tipo de operação? (+, -, *,/)")
 
         num1 = parseInt(num1)
-        num2 =  parseInt(num2)
+        num2 = parseInt(num2)
         let resultado = 0
-        if (op=="+"){
+        if (op == "+") {
             resultado = num1 + num2
-        }else{
+        }else if(op=="*"){
+            resultado= num1*num2
+        }else if (op=="/"){
+            resultado = num1/num2
+        } else {
             resultado = num1 - num2
         }
-        window.alert(resultado)        
 
-
-
-
+        document.getElementsByTagName("p")[0].innerText = "o resultado é:"+resultado
+        
 
 
     </script>

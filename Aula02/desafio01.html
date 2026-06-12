@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites, web">
+    <meta name="author" content="Luana Oliveira">
+    <title>EXERCICIO 01 - INTRODUÇÃO AO JAVASCRIPT</title>
+
+    <!-- <link rel="icon" type="images/png" href="//sc.ltwebstatic.com/she_dist/images/touch-icon-ipad-72-452a7213ef.png"> -->
+    <link rel="icon" type="favicon/png" href="img/favicon.jpg">
+
+</head>
+
+<body>
+    <h1><mark>MANIPULANDO ELEMENTOS (TAGS)</mark> DO HTML ATRAVES DO JS</h1>
+    <div>
+
+        <hr>
+        <p>ESTAMOS APRENDENDO JAVASCRIPT</p>
+        <hr>
+        <p>JavaScript</p>
+        <p>Aprender é muito legal</p>
+    </div>
+
+    <script>
+        const tags_p1 = document.getElementsByTagName('p')
+        console.log(tags_p1);
+        let tag_p_1 = tags_p1[0]
+        console.log(tag_p_1);
+        tag_p_1.style.backgroundColor = "red";
+        tag_p_1.style.color = "white";
+        tag_p_1.style.textAlign = "center";
+        tag_p_1.style.fontSize = "25pt";
+
+        const tags_p2 = document.getElementsByTagName('p')
+        console.log(tags_p2);
+        let tag_p_2 = tags_p2[1]
+        console.log(tag_p_2);
+        tag_p_2.style.backgroundColor = "pink";
+        tag_p_2.style.color = "white";
+        tag_p_2.style.textAlign = "center";
+        tag_p_2.style.fontSize = "25pt";
+
+        const tags_p3 = document.getElementsByTagName('p')
+        console.log(tags_p3);
+        let tag_p_3 = tags_p3[2]
+        console.log(tag_p_3);
+        tag_p_3.style.backgroundColor = "red";
+        tag_p_3.style.color = "white";
+        tag_p_3.style.textAlign = "center";
+        tag_p_3.style.fontSize = "25pt";
+
+        tag_p_3.innerText = "A TURMA DO DEV É ESPETACULAR DEMAIS!"
+
+
+        const div1 = document.getElementsByTagName('div')
+        console.log(div1);
+        let div = div1[0]
+        console.log(div);
+        div.style.border="5px solid white"
+        div.style.backgroundColor = "blue";
+        div.style.color = "white";
+        div.style.textAlign = "center";
+        div.style.fontSize = "25pt";
+        
+
+        const body1 = document.getElementsByTagName('body')
+        console.log(body1);
+        let body = body1[0]
+        console.log(body1);
+
+        body.style.backgroundColor = "violet";
+        body.style.color = "white";
+        body.style.textAlign = "center";
+        body.style.fontSize = "25pt";
+
+        document.write('<h2>UAAAU, <mark>JAVASCRIPT É MUITO LEGAL!</mark></h2>')
+
+    </script>
+</body>
+
+</html>
