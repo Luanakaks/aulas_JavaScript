@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="...">
+    <meta name="keywords" content="sites, web">
+    <meta name="author" content="Luana Oliveira">
+    <title>exercicio 01 - Aula 3</title>
+
+    <!-- <link rel="icon" type="images/png" href="//sc.ltwebstatic.com/she_dist/images/touch-icon-ipad-72-452a7213ef.png"> -->
+    <link rel="icon" type="favicon/png" href="../favicon.jpg">
+
+</head>
+
+<body>
+    <h1><mark>INTERAÇÃO JS COM FORMS </mark> DO HTML </h1>
+    <hr>
+    <input type="button" onclick="triste();" value="feliz">
+    <input type="button" onclick="feliz();" value="triste">
+    <img src="img/emogi_triste.jpg" id="rosto" style="width:350px;">
+
+    <script>
+
+        function triste() {
+            const tags_img = document.getElementsByTagName('img')[0]
+            console.log(tags_img);
+            tags_img.src = "img/feliz.png";
+
+        }
+        function feliz() {
+           var tags_img = document.getElementsByTagName('img')[0]
+            console.log(tags_img);
+            tags_img.src = "img/triste.png";
+        }
+
+    </script>
+</body>
+
+</html>
